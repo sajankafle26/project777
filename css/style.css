@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@100..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root 
+{
+    --f1:"Mukta", sans-serif;
+    --f2: "Noto Sans Devanagari", sans-serif;
+    --black : #000;
+    --brand: red;
+}
+body 
+{
+        font-family: var(--f1)
+}
+h1,h2,h3,h4,h5,h6 
+{
+      font-family: var(--f2)
+}
+a 
+{
+    text-decoration: none;
+}
+ul 
+{
+    list-style: none;
+}
+.flex 
+{
+    display: flex;
+}
+.jc 
+{
+    justify-content: space-between;
+}
+.ai 
+{
+    align-items: center;
+}
+.container 
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.t-center 
+{
+    text-align: center;
+}
+.topads 
+{
+    width: 673px;
+}
+header 
+{
+    padding: 15px 0;
+}
+nav 
+{
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 20px;
+}
+.gap 
+{
+    gap: 25px;
+}
+nav li 
+{
+    position: relative;
+}
+nav .dropdown 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px;
+}
+nav li:hover .dropdown
+{
+    display: block;
+}
+nav a 
+{
+    font-family: var(--f2);
+    font-weight: 600;
+    color: #4d4d4d;
+}
+nav a:hover 
+{
+    color: var(--black);
+}
+.w-100 
+{
+    width: 100%;
+}
+.p 
+{
+    padding: 20px 0;
+}
+.banner article{
+    border: 1px solid #999;
+    padding: 40px;
+    margin: 30px 0;
+}
+.banner article h2
+{
+    font-size: 68px;
+}
+.thumb 
+{
+    border: 1px solid #999;
+    border-radius: 50%; width: 50px; height: 50px;
+}
+.jcc 
+{
+    justify-content: center; gap: 10px;
+}
+.banner article{
+    font-size: 19px;
+    font-family: var(--f1);
+}
+.banner article p a 
+{
+    color: var(--brand);
+}
+.banner article p a:hover 
+{
+    color: blue;
+}
+.banner article p a::before
+{
+    content: '|';
+    margin: 0px 10px;
+}
+.block1-left
+{
+    width: 70%;
+    border-right: 1px solid #999;
+    padding-right: 20px;
+}
+.block1-left h4 
+{
+    font-size: 18px;
+    font-weight: 700;
+}
+.block1-left h2
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+.block1-right 
+{
+    width: 30%;
+}
+.block1-right li span::before
+{
+    content: '|';
+}
+.block1-right li
+{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: var(--brand);
+}
+.block1-right li h3
+{
+    color: var(--black);
+}
+.block1-right li span 
+{
+    color: grey;
+}
+.block1-right li::before
+{
+    content: '';
+    position: absolute; width: 1px; height: 100%; background: var(--black);
+    left: -10px;
+}
+.block1-right li::after
+{
+    content: ''; position: absolute; width: 10px; height: 10px; background: #fff; border-radius: 50%;
+    border: 1px solid var(--black); top: 0; left: -15px;
+}
+.block1-right li:first-child::after
+{
+    background: var(--black);
+}
+.block1 .container
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.b2 > div 
+{
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+.b2 > div:last-child
+{
+    border: none;
+    padding-right: 0;
+}
+.title
+{
+    font-size: 34px;
+    color: var(--brand);
+    position: relative;
+}
+.title::after
+{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #4d4d4d;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.title span 
+{
+    position: relative;
+    background: #fff;
+    padding: 10px 16px;
+    z-index: 999;
+    display: inline-block;
+}
+.title span:hover 
+{
+    color: #999;
+}
+.block3-left
+{
+    width: 70%;
+    border-right: 1px solid #ccc;padding-right: 20px;
+}
+.thumb1
+{
+    width: 140px;
+}
